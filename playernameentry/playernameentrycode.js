@@ -16,13 +16,13 @@ backButton.addEventListener("click",processBackButtonPressed)
 /**
  * Gets the music to be played, and set it to loop
  */
-const nameEntryMusic = new Audio("../../assets/audio/music/nameentryMusic.mp3")
+const nameEntryMusic = new Audio("../../Quizathon/assets/audio/music/nameentryMusic.mp3")
 nameEntryMusic.loop ="true";
 
 /**
  * Gets the sound effects to be played
  */
-const buttonSFX = new Audio("../../assets/audio/sfx/button.mp3")
+const buttonSFX = new Audio("../../Quizathon/assets/audio/sfx/button.mp3")
 
 
 /**
@@ -78,3 +78,4 @@ function goToAvatarEntry(){
 if(sessionStorage.getItem("ToggleMusic") === "true" && sessionStorage.getItem("ToggleMusic")!== null){
     nameEntryMusic.play()
 }
+
