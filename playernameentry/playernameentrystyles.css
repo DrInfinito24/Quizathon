@@ -14,7 +14,7 @@
 /*Available at: https://css-tricks.com/snippets/css/using-font-face-in-css/*/
 @font-face{
     font-family: pixelFont;
-    src: url("../../assets/fonts/PressStart2P-Regular.ttf") format('woff2')
+    src: url("../../Quizathon/assets/fonts/PressStart2P-Regular.ttf") format('woff2')
 }
 
 #nameentry_text{
@@ -166,6 +166,7 @@ body{
     width: 60%;
     height: 60%;
 }
+
 
 
 
