@@ -20,13 +20,13 @@ sfxButton.addEventListener("click",processSFXButtonPressed)
 /**
  * Gets the music to be played, and set it to loop
  */
-const mainmenuMusic = new Audio("../../assets/audio/music/mainmenuMusic.mp3")
+const mainmenuMusic = new Audio("../../Quizathon/assets/audio/music/mainmenuMusic.mp3")
 mainmenuMusic.loop ="true";
 
 /**
  * Gets the sound effects to be played
  */
-const buttonSFX = new Audio("../../assets/audio/sfx/button.mp3")
+const buttonSFX = new Audio("../../Quizathon/assets/audio/sfx/button.mp3")
 
 /**
  * Gets whether the music can be played by checking te session storage values.
@@ -154,4 +154,5 @@ function ToggleSFXButton(){
         sfxButton.value = "SFX Disabled"
     }
 }
+
 
