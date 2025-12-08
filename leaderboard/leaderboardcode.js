@@ -15,13 +15,13 @@ menuButton.addEventListener("click",processMenuButtonPressed)
 /**
  * Gets the music to be played, and set it to loop
  */
-const leaderBoardMusic = new Audio("../../assets/audio/music/leaderboardMusic.mp3")
+const leaderBoardMusic = new Audio("../../Quizathon/assets/audio/music/leaderboardMusic.mp3")
 leaderBoardMusic.loop ="true";
 
 /**
  * Gets the Sound effects to be played
  */
-const buttonSFX = new Audio("../../assets/audio/sfx/button.mp3")
+const buttonSFX = new Audio("../../Quizathon/assets/audio/sfx/button.mp3")
 
 /**
  * Starts the fade transition animation, and go to the main menu after 0.2 seconds.
@@ -83,11 +83,11 @@ function fillLeaderboard(){
                 let avatarNumber = parseInt(playerEntries[i].Avatar)
                 let avatarInnerHTML
                 if(avatarNumber !== null && avatarNumber !== 0){
-                   let avatarPath = "\"../../assets/images/still/avatar/" + String(avatarNumber) + "/avatar" + String(avatarNumber) +".png\" "
+                   let avatarPath = "\"../../Quizathon/assets/images/still/avatar/" + String(avatarNumber) + "/avatar" + String(avatarNumber) +".png\" "
                     avatarInnerHTML = "<img src = " + avatarPath + "alt = Player Avatar Image  width=70px height=70px>" 
                 }
                 else{
-                    avatarInnerHTML = "<img src = " + "\"../../assets/images/still/avatar/1/avatar1.png\" " + "alt = Player Avatar Image  width=70px height=70px>" 
+                    avatarInnerHTML = "<img src = " + "\"../../Quizathon/assets/images/still/avatar/1/avatar1.png\" " + "alt = Player Avatar Image  width=70px height=70px>" 
                 }
                 playerAvatarCol.innerHTML =  avatarInnerHTML
                 newPlayerRow.appendChild(playerAvatarCol);
@@ -182,5 +182,6 @@ if(sessionStorage.getItem("ToggleMusic") === "true" && sessionStorage.getItem("T
 }
 
 setTimeout(processMenuButtonPressed,30000)
+
 
 console.log(JSON.parse(localStorage.getItem("PlayerEntries")))
