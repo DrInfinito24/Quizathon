@@ -1,0 +1,171 @@
+/* This code is based on an example of a CSS Reset */
+/*Author: JoshWComeau*/
+/*Accessed: 6/5/25*/
+/*Available at: https://www.joshwcomeau.com/css/custom-css-reset/*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+/* This code is based on an example on how to load external fonts to the web application */
+/*Author: Chris Coyier*/
+/*Accessed: 12/5/25*/
+/*Available at: https://css-tricks.com/snippets/css/using-font-face-in-css/*/
+@font-face{
+    font-family: pixelFont;
+    src: url("../../assets/fonts/PressStart2P-Regular.ttf") format('woff2')
+}
+
+#nameentry_text{
+    font-family: pixelFont;
+    position:absolute;
+    left:30vw;
+    font-size: 4vw;
+    top:3vh;
+    word-wrap: break-word;
+    color:gold;
+    -webkit-text-stroke:2px;
+    -webkit-text-stroke-color:goldenrod;
+
+}
+
+
+.nameentrybg_image{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+}
+
+.nameentry_area{
+    position:absolute;
+    top:15vh;
+    left: 20vw;
+}
+
+.nameentrymenu_image{
+    width: 60vw;
+    height: 70vh;
+}
+
+#user-label{
+    position:absolute;
+    font-size:2vw;
+    left:5.5vw;
+    top:12vh;
+    width: 50vw;
+    height: 10vh;
+    font-family: pixelFont;
+    text-align: center;
+    color:white;
+}
+
+@media(max-width:1400px){
+    #user-label{
+        top:13vh;
+    }
+}
+
+@media(max-width:1200px){
+    #user-label{
+        top:14vh;
+    }
+}
+
+
+#user{
+    position: relative;
+    font-size: 1.5em;
+    left:10vw;
+    top:-42vh;
+    width: 39vw;
+    height: 10vh;
+    border-width: 1vw;
+    border-style: solid;
+    border-color:gray;
+    font-family: pixelFont;
+    text-align: center;
+    margin-left: 0vw;
+    margin-right: 0vh;
+}
+
+#user:hover, #user:focus{
+    border-width: 1.1vw;
+    border-color: lightblue;
+    margin-left: -0.1vw;
+    margin-top: -0.5vh;
+
+}
+
+input::placeholder{
+    text-align:center;
+}
+
+.nameentry_button{
+    width:20vw;
+    height: 10vh;
+    background-color:darkslateblue;
+    border-color:aliceblue;
+    border-style: solid;
+    color: white;
+    border-width: 0.5vw;
+    font-family: pixelFont;
+    font-size: 3vw;
+}
+.nameentry_button:hover, .nameentry_button:focus{
+    border-width: 0.7vw;
+    border-color: lightblue;
+}
+
+
+#next-button{
+    position: absolute;
+    left:35vw;
+    top:50vh;
+
+}
+
+#back-button{
+    position: absolute;
+    left:5vw;
+    top:50vh;
+}
+
+.fadeTransition_image{
+    position: absolute;
+    width:100vw;
+    height:100vh;
+    top:0vh;
+    opacity: 0.0;
+    animation: fadeIn 0.3s;
+    pointer-events: none;
+    z-index: 1;
+}
+
+@keyframes fadeIn{
+    0%{
+        opacity: 1.0;
+    }
+    100%{
+        opacity: 0.0;
+    }
+}
+
+@keyframes fadeOut{
+    0%{
+        opacity: 0.0;
+    }
+    100%{
+        opacity: 1.0;
+    }
+}
+
+
+
+body{
+    width: 60%;
+    height: 60%;
+}
+
+
+

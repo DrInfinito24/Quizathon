@@ -1,0 +1,138 @@
+
+/* This code is based on an example of a CSS Reset */
+/*Author: JoshWComeau*/
+/*Accessed: 6/5/25*/
+/*Available at: https://www.joshwcomeau.com/css/custom-css-reset/*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* This code is based on an example on how to load external fonts to the web application */
+/*Author: Chris Coyier*/
+/*Accessed: 12/5/25*/
+/*Available at: https://css-tricks.com/snippets/css/using-font-face-in-css/*/
+@font-face{
+    font-family: pixelFont;
+    src: url("../../assets/fonts/PressStart2P-Regular.ttf") format('woff2')
+}
+
+.leaderboardbg_image{
+    position: absolute;
+    width: 100vw;
+}
+
+
+table{
+    position: relative;
+    background-color: goldenrod;
+    width: 58vw;    
+    left:20vw;
+    top: 10vh;
+    font-family: pixelFont;
+    color:white;
+    border: 1px;
+    border-color: black;
+    font-size: 1em;
+}
+
+caption{
+    background-color: goldenrod;
+    color: black;
+    height: 5vh;
+    line-height: 5vh;
+}
+
+
+
+tr{
+    background-color:darkred;
+    text-align: center;
+}
+
+#Leaderboard_Header{
+    background-color: gold;
+    height: 5vh;
+    color:black;
+}
+
+#Leaderboard_Title{
+    position: relative;
+    left:20.5vw;
+    top:6vh;
+    font-size: 5vw;
+    margin: 0;
+    color:gold;
+    -webkit-text-stroke:2px;
+    -webkit-text-stroke-color:goldenrod;
+    font-family: pixelFont;
+}
+
+@media(max-width:600px){
+    table{
+        font-size: 0.5em;
+        left:17vw;
+    }
+}
+
+@media(max-width:360px){
+    table{
+        left:12vw;
+    }
+}
+
+
+
+#menu_button{
+    position: absolute;
+    left:2vw;
+    top:5vh;
+    width:15vw;
+    height: 10vh;
+    background-color:darkslateblue;
+    border-color:aliceblue;
+    border-style: solid;
+    color: white;
+    border-width: 0.5vw;
+    font-family: pixelFont;
+    font-size: 0.8vw;
+}
+
+#menu_button:hover, #menu_button:focus{
+    border-width: 0.7vw;
+    border-color: lightblue;
+}
+
+.fadeTransition_image{
+    position: absolute;
+    width:100vw;
+    height:100vh;
+    top:0vh;
+    opacity: 0.0;
+    animation: fadeIn 0.3s;
+    pointer-events: none;
+    z-index: 1;
+}
+
+@keyframes fadeIn{
+    0%{
+        opacity: 1.0;
+    }
+    100%{
+        opacity: 0.0;
+    }
+}
+
+@keyframes fadeOut{
+    0%{
+        opacity: 0.0;
+    }
+    100%{
+        opacity: 1.0;
+    }
+}
+
+
+body{
+    width: 60%;
+}

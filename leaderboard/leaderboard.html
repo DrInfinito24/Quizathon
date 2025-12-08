@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Quizathon Leaderboard</title>
+        <link href="leaderboardstyle.css" type="text/css" rel="stylesheet">
+    </head>
+    <body id = "leaderboardBody">
+        <img id = "fadeTransition_image" class="fadeTransition_image" src = "../../assets/images/still/fadeTransition.png" alt = "Image used for the fade transition of the page ">
+        <img id = "leaderboardbg_image" class="leaderboardbg_image" src = "../../assets/images/still/mainmenu7.png" alt = "Leaderboard Background Image">
+        <header>
+            <input id= "menu_button" name = "menu_button" type = "button" value="Go to Main Menu" class = "menu_button">
+            <h1 id = "Leaderboard_Title">Leaderboard</h1>
+        </header>
+        <main>
+            <div class = "table_area">
+                <table>
+                    <caption>Player Rankings</caption>
+                    <thead>
+                         <tr id = "Leaderboard_Header">
+                            <th>Rank</th>
+                            <th>Avatar</th>
+                            <th>Name</th>
+                            <th>Score</th>
+                        </tr>
+                    </thead>
+                    <tbody id = "Entries">
+
+                    </tbody>
+                </table>
+                
+            </div>
+        </main>
+        <script src = "leaderboardcode.js"></script>
+    </body>
+</html>

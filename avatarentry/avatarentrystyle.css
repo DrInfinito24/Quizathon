@@ -1,0 +1,181 @@
+/* This code is based on an example of a CSS Reset */
+/*Author: JoshWComeau*/
+/*Accessed: 6/5/25*/
+/*Available at: https://www.joshwcomeau.com/css/custom-css-reset/*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* This code is based on an example on how to load external fonts to the web application */
+/*Author: Chris Coyier*/
+/*Accessed: 12/5/25*/
+/*Available at: https://css-tricks.com/snippets/css/using-font-face-in-css/*/
+@font-face{
+    font-family: pixelFont;
+    src: url("../../assets/fonts/PressStart2P-Regular.ttf") format('woff2')
+}
+
+.avatarentrybg_image{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+}
+
+#avatarentry_text{
+    font-family: pixelFont;
+    position:absolute;
+    left:25vw;
+    font-size: 4vw;
+    top:3vh;
+    word-wrap: break-word;
+    color:gold;
+    -webkit-text-stroke:2px;
+    -webkit-text-stroke-color:goldenrod;
+
+}
+
+
+.avatarimage_area{
+    position:absolute;
+    top:15vh;
+    left: 10vw;
+}
+
+.avatarform_img{
+    width: 80vw;
+    height: 80vh;
+}
+
+
+#avatar-label{
+    position:absolute;
+    font-size: 2em;
+    left:1vw;
+    top:5vh;
+    width: 80vw;
+    font-family: pixelFont;
+    text-align: center;
+    color:white;
+}
+
+@media(max-width:1400px){
+    #avatar-label{
+        font-size: 1.5em;
+    }
+}
+
+@media(max-width:800px){
+    #avatar-label{
+        font-size: 1em;
+    }
+}
+
+.avatar-btn, .avatar-img{
+    width: 10vw;
+    height:18vh;
+    background-color:darkslateblue;
+}
+
+
+.avatar-img{
+    pointer-events: none;
+    border-width: 0.3vw;
+    border-style: solid;
+    background-color:darkslateblue;
+    border-color:aliceblue;
+    color: white;
+}
+
+#avatar1-button,#avatar1-img{
+    position: absolute;
+    left:10vw;
+    top:15vh;
+}
+
+#avatar2-button,#avatar2-img{
+    position: absolute;
+    left:35vw;
+    top:15vh;
+}
+
+#avatar3-button,#avatar3-img{
+    position: absolute;
+    left:60vw;
+    top:15vh;
+}
+
+#avatar4-button,#avatar4-img{
+    position: absolute;
+    left:10vw;
+    top:40vh;
+}
+
+#avatar5-button,#avatar5-img{
+    position: absolute;
+    left:35vw;
+    top:40vh;
+}
+
+#avatar6-button,#avatar6-img{
+    position: absolute;
+    left:60vw;
+    top:40vh;
+}
+
+
+
+#back-button{
+    position: absolute;
+    left:30vw;
+    top:65vh;
+    width:20vw;
+    height: 10vh;
+    background-color:darkslateblue;
+    border-color:aliceblue;
+    border-style: solid;
+    color: white;
+    border-width: 0.5vw;
+    font-family: pixelFont;
+    font-size: 3vw;
+}
+
+.fadeTransition_image{
+    position: absolute;
+    width:100vw;
+    height:100vh;
+    top:0vh;
+    opacity: 0.0;
+    animation: fadeIn 0.3s;
+    pointer-events: none;
+    z-index: 1;
+}
+
+@keyframes fadeIn{
+    0%{
+        opacity: 1.0;
+    }
+    100%{
+        opacity: 0.0;
+    }
+}
+
+@keyframes fadeOut{
+    0%{
+        opacity: 0.0;
+    }
+    100%{
+        opacity: 1.0;
+    }
+}
+
+
+
+
+body{
+    width: 60vw;
+    height: 60vh;
+}
+
+
+

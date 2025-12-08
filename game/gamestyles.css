@@ -1,0 +1,367 @@
+
+
+/* These codes are based on an example of a CSS Reset */
+/*Author: JoshWComeau*/
+/*Accessed: 6/5/25*/
+/*Available at: https://www.joshwcomeau.com/css/custom-css-reset/*/
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  
+.question_text,.game_area,.answer_options{
+    position:relative;
+    margin-top: -1vh;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* This code is based on an example on how to load external fonts to the web application */
+/*Author: Chris Coyier*/
+/*Accessed: 12/5/25*/
+/*Available at: https://css-tricks.com/snippets/css/using-font-face-in-css/*/
+@font-face{
+    font-family: pixelFont;
+    src: url("../../assets/fonts/PressStart2P-Regular.ttf") format('woff2')
+}
+
+.curtain_image{
+    position: absolute;
+    width:100vw;
+    height:0vh;
+    top:0vh;
+    pointer-events: none;
+    animation: curtainDefault,1.0s,infinite;
+    z-index: 1;
+}
+
+@keyframes curtainDefault{
+    0%{
+        height: 99vh;
+    }
+    100%{
+        height: 99vh;
+    }
+}
+
+@keyframes curtainUp{
+    0%{
+        height: 99vh;
+    }
+    100%{
+        height: 0vh;
+    }
+}
+
+@keyframes curtainDown{
+    0%{
+        height: 0vh;
+    }
+    100%{
+        height: 99vh;
+    }
+}
+
+
+.questionbg_img{
+    width: 100vw;
+    height: 20vh;
+}
+
+#questionDisplay{
+    font-size: 2.5em;
+    top:35%;
+    position:absolute;
+    text-align:center;
+    width: 100vw;
+    color: white;
+    font-family: pixelFont;
+}
+
+.timer_img, .timeRemaining_img{
+    position: absolute;
+    width:50%;
+    height:5%;
+    top:7%;
+    left:26%;
+}
+
+#timer_text{
+    font-size: 3em;
+    top:3%;
+    position:absolute;
+    text-align:center;
+    left:49%;
+    font-family: pixelFont;
+    color:white;
+    -webkit-text-stroke:3px;
+    -webkit-text-stroke-color:black;
+}
+
+
+.mainbg_img{
+    width: 100vw;
+    height: 50vh;
+
+}
+
+.lives_img{
+    position: absolute;
+    width: 4vw;
+    height: 4vw;
+}
+
+#lives1_image{
+    left:3vw;
+    top:15vh;
+}
+
+#lives2_image{
+    left:9vw;
+    top:15vh;
+}
+
+#lives3_image{
+    left:15vw;
+    top:15vh;
+}
+
+.spotlight_image{
+    position: absolute;
+    height: 50vh;
+    width: 20vw;
+}
+
+#contestantSpotlight_image{
+    left: 1vw;
+}
+
+.contestant_img{
+    position: absolute;
+    height: 35vh;
+    width: 20vw;
+    top:14.5vh;
+    left:1.5vw;
+}
+
+#contestant_name{
+    font-size: 2.5vw;
+    position:absolute;
+    top:1vh;
+    left:-1vw;
+    width:16vw;
+    text-align: center;
+    font-family: pixelFont;
+    color:gold;
+    -webkit-text-stroke:2px;
+    -webkit-text-stroke-color:goldenrod;
+    background-color:black;
+}
+
+#score_count{
+    font-size: 3vw;
+    position:absolute;
+    top:1vh;
+    left:85.5vw;
+    font-family: pixelFont;
+    color:gold;
+    -webkit-text-stroke:2px;
+    -webkit-text-stroke-color:goldenrod;
+    background-color: black;
+    text-align: center;
+    width: 1vw;
+}
+
+
+#hostSpotlight_image{
+    left:78vw;
+}
+
+.host_img{
+    position: absolute;
+    height: 25vh;
+    width: 15vw;
+    top:24.4vh;
+    left:80vw;
+}
+
+.dialogue_box{
+    position: absolute;
+    width:0vw;
+    height:0vh;
+    top:8vh;
+    left:27vw;
+}
+
+@keyframes dialogueAppear{
+    0%{
+        width:0vw;
+        height: 0vh;
+        top:40vh;
+        left:80vw;
+    }
+    100%{
+        width:50vw;
+        height: 40vh;
+        top:8vh;
+        left:27vw;
+    }
+}
+
+@keyframes dialogueDefault{
+    0%{
+        width:50vw;
+        height: 40vh;
+        top:8vh;
+        left:27vw
+    }
+    100%{
+        width:50vw;
+        height: 40vh;
+        top:8vh;
+        left:27vw
+    }
+}
+
+@keyframes dialogueDissapear{
+    0%{
+        width:50vw;
+        height: 40vh;
+        top:8vh;
+        left:27vw
+    }
+    100%{
+        width:0vw;
+        height: 0vh;
+        top:40vh;
+        left:80vw;
+    }
+}
+
+
+
+#host_dialogue{
+    font-size: 2em;
+    top:22%;
+    left:30%;
+    position:absolute;
+    text-align:center;
+    width: 40%;
+    font-family: pixelFont;
+    line-height: 10vh;
+}
+
+
+.question_img{
+    position: absolute;
+    width:30%;
+    height:70%;
+    top:28%;
+    left:34.5%;
+}
+
+.answerbg_img{
+    width: 100vw;
+    height: 30vh;
+   
+}
+
+.answer-btn{
+    width: 47vw;
+    height:10vh;
+    background-color: darkslateblue;
+    border-color:white;
+    border-width: 0.3vw;
+    border-style: solid;
+    color: white;
+    font-family: pixelFont;
+    font-size: 2vw;
+}
+
+#answer-btn1{
+    position: absolute;
+    top: 15%;
+    left:2%;
+}
+
+#answer-btn2{
+    position: absolute;
+    top: 15%;
+    left:51.2%;
+    
+}
+
+#answer-btn3{
+    position: absolute;
+    top: 60%;
+    left:2%;
+    
+}
+
+#answer-btn4{
+    position: absolute;
+    top: 60%;
+    left:51.2%;
+    
+}
+
+@media(max-width:1380px){
+    #host_dialogue, #questionDisplay{
+        font-size:1.5em;
+    }
+}
+
+@media(max-width:1200px){
+    #host_dialogue, #questionDisplay{
+        font-size:1em;
+    }
+}
+
+@media(max-width:800px){
+    #host_dialogue{
+        font-size:0.5em;
+    }
+}
+
+.fadeTransition_image{
+    position: absolute;
+    width:100vw;
+    height:100vh;
+    top:0vh;
+    opacity: 0.0;
+    animation: fadeIn 2.0s;
+    pointer-events: none;
+    z-index: 2;
+}
+
+@keyframes fadeIn{
+    0%{
+        opacity: 1.0;
+    }
+    100%{
+        opacity: 0.0;
+    }
+}
+
+@keyframes fadeOut{
+    0%{
+        opacity: 0.0;
+    }
+    100%{
+        opacity: 1.0;
+    }
+}
+
+
+body{
+    background-color:darkred;
+}
+
+
+
