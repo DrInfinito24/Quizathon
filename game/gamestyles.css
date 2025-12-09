@@ -28,7 +28,7 @@ p, h1, h2, h3, h4, h5, h6 {
 /*Available at: https://css-tricks.com/snippets/css/using-font-face-in-css/*/
 @font-face{
     font-family: pixelFont;
-    src: url("../../assets/fonts/PressStart2P-Regular.ttf") format('woff2')
+    src: url("../../Quizathon/assets/fonts/PressStart2P-Regular.ttf") format('woff2')
 }
 
 .curtain_image{
@@ -362,6 +362,7 @@ p, h1, h2, h3, h4, h5, h6 {
 body{
     background-color:darkred;
 }
+
 
 
 
