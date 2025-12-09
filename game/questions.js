@@ -49,7 +49,7 @@ const questions = [
         option3: "Rhombus",
         option4: "Trapezium",
         answer: ["Diamond","Rhombus"],
-        image: "../../assets/images/still/questionimage/rhombus.png"
+        image: "../../Quizathon/assets/images/still/questionimage/rhombus.png"
     },
     {
         question: "What did Geoffrey Chaucer write?",
@@ -94,7 +94,7 @@ const questions = [
         option3: "Doctor Faustus",
         option4: "Othello",
         answer: ["Othello"],
-        image: "../../assets/images/still/questionimage/shakespeare.jpg"
+        image: "../../Quizathon/assets/images/still/questionimage/shakespeare.jpg"
     },
     {
         question: "What transports water in plants?",
@@ -130,7 +130,7 @@ const questions = [
         option3: "Plutonium",
         option4: "Polonium",
         answer: ["Phosphorus"],
-        image: "../../assets/images/still/questionimage/phosphorus.png"
+        image: "../../Quizathon/assets/images/still/questionimage/phosphorus.png"
     },
     {
         question: "Which of these is NOT an elementary particle?",
@@ -157,7 +157,7 @@ const questions = [
         option3: "Mercury",
         option4: "Mars",
         answer: ["Mercury"],
-        image: "../../assets/images/still/questionimage/mercury.jpg"
+        image: "../../Quizathon/assets/images/still/questionimage/mercury.jpg"
     },
     {
         question: "Whats the world's longest river?",
@@ -193,7 +193,7 @@ const questions = [
         option3: "Stack",
         option4: "Sound",
         answer: ["Stack"],
-        image: "../../assets/images/still/questionimage/hoy.jpg"
+        image: "../../Quizathon/assets/images/still/questionimage/hoy.jpg"
     },
     {
         question: "What country is this?",
@@ -202,7 +202,7 @@ const questions = [
         option3: "Romania",
         option4: "Albania",
         answer: ["Croatia"],
-        image: "../../assets/images/still/questionimage/croatia.png"
+        image: "../../Quizathon/assets/images/still/questionimage/croatia.png"
     },
     {
         question: "What country is this?",
@@ -211,7 +211,7 @@ const questions = [
         option3: "Turkmenistan",
         option4: "Oman",
         answer: ["Mongolia"],
-        image: "../../assets/images/still/questionimage/mongolia.png"
+        image: "../../Quizathon/assets/images/still/questionimage/mongolia.png"
     },
     {
         question: "What country is this?",
@@ -220,7 +220,7 @@ const questions = [
         option3: "Tanzania",
         option4: "Mozambique",
         answer: ["Uganda"],
-        image: "../../assets/images/still/questionimage/uganda.png"
+        image: "../../Quizathon/assets/images/still/questionimage/uganda.png"
     },
     {
         question: "What country is this?",
@@ -229,7 +229,7 @@ const questions = [
         option3: "Colombia",
         option4: "Honduras",
         answer: ["Panama"],
-        image: "../../assets/images/still/questionimage/panama.png"
+        image: "../../Quizathon/assets/images/still/questionimage/panama.png"
     },
     {
         question: "What country is this?",
@@ -238,7 +238,7 @@ const questions = [
         option3: "Uruguay",
         option4: "Bolivia",
         answer: ["Argentina"],
-        image: "../../assets/images/still/questionimage/argentina.png"
+        image: "../../Quizathon/assets/images/still/questionimage/argentina.png"
     },
     {
         question: "Who ruled Britain after Charles I?",
@@ -463,7 +463,7 @@ const questions = [
         option3: "Ramesses II",
         option4: "Cleopatra",
         answer: ["Khufu"],
-        image: "../../assets/images/still/questionimage/pyramid.jpg"
+        image: "../../Quizathon/assets/images/still/questionimage/pyramid.jpg"
     },
     {
         question: "What kind of establishment is Freddy Fazbear's?",
@@ -544,7 +544,7 @@ const questions = [
         option3: "Lion's Dandruff",
         option4: "Lion's Flower",
         answer: ["Lion's Tooth"],
-        image: "../../assets/images/still/questionimage/dandelion.jpg"
+        image: "../../Quizathon/assets/images/still/questionimage/dandelion.jpg"
     },
 
 
@@ -558,5 +558,6 @@ const questions = [
 
 
 ]
+
 
 
