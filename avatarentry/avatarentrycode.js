@@ -9,16 +9,16 @@ const fadeTransitionImage = document.getElementById('fadeTransition_image')
 /**
  * Gets the music to be played, and set it to loop
  */
-const avatarEntryMusic = new Audio("../../assets/audio/music/avatarEntryMusic.mp3")
+const avatarEntryMusic = new Audio("../../Quizathon/assets/audio/music/avatarEntryMusic.mp3")
 avatarEntryMusic.loop ="true";
 
 /**
  * Gets the Sound effects to be played
  */
 
-const buttonSFX = new Audio("../../assets/audio/sfx/button.mp3")
+const buttonSFX = new Audio("../../Quizathon/assets/audio/sfx/button.mp3")
 
-const avatarSFX = new Audio("../../assets/audio/sfx/avatar.mp3")
+const avatarSFX = new Audio("../../Quizathon/assets/audio/sfx/avatar.mp3")
 
 /**
  * Prevents the user from choosing another avtar once chosen.
@@ -147,7 +147,7 @@ function processPlayerEntry(event){
                         avatarSFX.play();
                     }
                     sessionStorage.setItem("TempAvatar",i+1)
-                    let altImagePath = "../../assets/images/still/avatar" + "/"+ String(i+1)+ "/avatar"+ + String(i+1)+ "alt.png";
+                    let altImagePath = "../../Quizathon/assets/images/still/avatar" + "/"+ String(i+1)+ "/avatar"+ + String(i+1)+ "alt.png";
                     avatarImages[i].src = altImagePath
                     fadeTransitionImage.style.animation = 'fadeOut 3s'
                     setTimeout(goToGame,2500)
@@ -171,3 +171,4 @@ function goToGame(){
 if(sessionStorage.getItem("ToggleMusic") === "true" && sessionStorage.getItem("ToggleMusic")!== null){
     avatarEntryMusic.play()
 }
+
