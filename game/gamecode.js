@@ -561,7 +561,7 @@ function changeDialogueText(){
                 if(sessionStorage.getItem("ToggleSFX") === "true" && sessionStorage.getItem("ToggleSFX") !== null){
                     cheerSFX.play();
                 }
-                hostImage.src = "../../assets/images/animated/host/host.gif"
+                hostImage.src = "../../Quizathon/assets/images/animated/host/host.gif"
                 hostDialogueText.textContent = IntroDialogue[dialogueIndex];
                 contestantAvatar.src =  "../../Quizathon/assets/images/animated/avatar/" + String(avatarNumber) + "/avatar" +String(avatarNumber) +"wave.gif"
             }
@@ -569,7 +569,7 @@ function changeDialogueText(){
              * For eveything else, set the avatar and host's image to default.
              */
             else{
-                hostImage.src = "../../assets/images/animated/host/host.gif"
+                hostImage.src = "../../Quizathon/assets/images/animated/host/host.gif"
                 hostDialogueText.textContent = IntroDialogue[dialogueIndex];
                 contestantAvatar.src =  "../../Quizathon/assets/images/animated/avatar/" + String(avatarNumber) + "/avatar" +String(avatarNumber) +"game.gif"
             }
@@ -752,6 +752,7 @@ setTimeout(startIntro,2000)
 if(sessionStorage.getItem("ToggleMusic") === "true" && sessionStorage.getItem("ToggleMusic")!== null){
     gameIntroMusic.play()
 }
+
 
 
 
