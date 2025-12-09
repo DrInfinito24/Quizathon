@@ -43,24 +43,24 @@ const lives3Image = document.getElementById('lives3_image')
 /**
  * Gets the music to be played, and set it to loop
  */
-const gameIntroMusic = new Audio("../../assets/audio/music/gameMusic.mp3")
+const gameIntroMusic = new Audio("../../Quizathon/assets/audio/music/gameMusic.mp3")
 gameIntroMusic.loop ="true";
 
-const gameMainMusic = new Audio("../../assets/audio/music/gameMainMusic.mp3")
+const gameMainMusic = new Audio("../../Quizathon/assets/audio/music/gameMainMusic.mp3")
 gameMainMusic.loop ="true";
 
 /**
  * Gets the Sound effects to be played
  */
-const buttonSFX = new Audio("../../assets/audio/sfx/button.mp3")
-const applauseSFX = new Audio("../../assets/audio/sfx/applause.mp3")
-const cheerSFX = new Audio("../../assets/audio/sfx/cheer.mp3")
-const awwSFX = new Audio("../../assets/audio/sfx/aww.mp3")
-const correctSFX = new Audio("../../assets/audio/sfx/correct.mp3")
-const wrongSFX = new Audio("../../assets/audio/sfx/wrong.mp3")
-const textboxSFX = new Audio("../../assets/audio/sfx/textbox.mp3")
-const timerSFX = new Audio("../../assets/audio/sfx/timer.mp3")
-const dingSFX = new Audio("../../assets/audio/sfx/ding.mp3")
+const buttonSFX = new Audio("../../Quizathon/assets/audio/sfx/button.mp3")
+const applauseSFX = new Audio("../../Quizathon/assets/audio/sfx/applause.mp3")
+const cheerSFX = new Audio("../../Quizathon/assets/audio/sfx/cheer.mp3")
+const awwSFX = new Audio("../../Quizathon/assets/audio/sfx/aww.mp3")
+const correctSFX = new Audio("../../Quizathon/assets/audio/sfx/correct.mp3")
+const wrongSFX = new Audio("../../Quizathon/assets/audio/sfx/wrong.mp3")
+const textboxSFX = new Audio("../../Quizathon/assets/audio/sfx/textbox.mp3")
+const timerSFX = new Audio("../../Quizathon/assets/audio/sfx/timer.mp3")
+const dingSFX = new Audio("../../Quizathon/assets/audio/sfx/ding.mp3")
 
 /**
  * The object literal used to store the player data.
@@ -128,7 +128,7 @@ if(sessionStorage.getItem("TempAvatar") != null){
 else{
     avatarNumber = 1;
 }
-contestantAvatar.src = "../../assets/images/animated/avatar/" + String(avatarNumber) + "/avatar" +String(avatarNumber) +"game.gif";
+contestantAvatar.src = "../../Quizathon/assets/images/animated/avatar/" + String(avatarNumber) + "/avatar" +String(avatarNumber) +"game.gif";
 
 
 /**
@@ -206,8 +206,8 @@ function newQuestion(){
     /**
      * Resets the player and host images from the celebration images.
      */
-    contestantAvatar.src =  "../../assets/images/animated/avatar/" + String(avatarNumber) + "/avatar" +String(avatarNumber) +"game.gif"
-    hostImage.src = "../../assets/images/animated/host/host.gif"
+    contestantAvatar.src =  "../../Quizathon/assets/images/animated/avatar/" + String(avatarNumber) + "/avatar" +String(avatarNumber) +"game.gif"
+    hostImage.src = "../../Quizathon/assets/images/animated/host/host.gif"
     /**
      * Set the score display to the current score
      */
@@ -295,7 +295,7 @@ function newQuestion(){
         questionImg.src = currentQuestion.image;
     }
     else{
-        questionImg.src = "../../assets/images/still/questionimgdefault.png";
+        questionImg.src = "../../Quizathon/assets/images/still/questionimgdefault.png";
     }
 }
 
@@ -361,9 +361,9 @@ function processCorrectAnswer(event){
     /**
      * Change the DOM elements properties to reflect a correct answer.
      */
-    contestantAvatar.src =  "../../assets/images/animated/avatar/" + String(avatarNumber) + "/avatar" +String(avatarNumber) +"celebrate.gif"
-    hostImage.src = "../../assets/images/still/host/hosthappy.png"
-    questionImg.src = "../../assets/images/still/questionimagecorrect.png";
+    contestantAvatar.src =  "../../Quizathon/assets/images/animated/avatar/" + String(avatarNumber) + "/avatar" +String(avatarNumber) +"celebrate.gif"
+    hostImage.src = "../../Quizathon/assets/images/still/host/hosthappy.png"
+    questionImg.src = "../../Quizathon/assets/images/still/questionimagecorrect.png";
     event.target.style.backgroundColor = "Green";
     /**
      * Play the sound for correct answer if possible.
@@ -404,9 +404,9 @@ function processWrongAnswer(currentQuestion){
     /**
      * Change the DOM elements properties to reflect a wrong answer.
      */
-    contestantAvatar.src =  "../../assets/images/animated/avatar/" + String(avatarNumber) + "/avatar" +String(avatarNumber) +"frown.gif"
-    hostImage.src = "../../assets/images/still/host/hostdead.png"
-    questionImg.src = "../../assets/images/still/questionimagewrong.png";
+    contestantAvatar.src =  "../../Quizathon/assets/images/animated/avatar/" + String(avatarNumber) + "/avatar" +String(avatarNumber) +"frown.gif"
+    hostImage.src = "../../Quizathon/assets/images/still/host/hostdead.png"
+    questionImg.src = "../../Quizathon/assets/images/still/questionimagewrong.png";
     /**
      * If this function is called for running out of time,
      * make sure the player can't continue to answer,
@@ -552,7 +552,7 @@ function changeDialogueText(){
                     applauseSFX.play();
                 }
                 hostDialogueText.textContent = IntroDialogue[dialogueIndex];
-                hostImage.src = "../../assets/images/animated/host/hostIntro.gif"
+                hostImage.src = "../../Quizathon/assets/images/animated/host/hostIntro.gif"
             }
             /**
              * Play the avatar's intro animation on their introduction dialogue.
@@ -563,7 +563,7 @@ function changeDialogueText(){
                 }
                 hostImage.src = "../../assets/images/animated/host/host.gif"
                 hostDialogueText.textContent = IntroDialogue[dialogueIndex];
-                contestantAvatar.src =  "../../assets/images/animated/avatar/" + String(avatarNumber) + "/avatar" +String(avatarNumber) +"wave.gif"
+                contestantAvatar.src =  "../../Quizathon/assets/images/animated/avatar/" + String(avatarNumber) + "/avatar" +String(avatarNumber) +"wave.gif"
             }
              /**
              * For eveything else, set the avatar and host's image to default.
@@ -571,7 +571,7 @@ function changeDialogueText(){
             else{
                 hostImage.src = "../../assets/images/animated/host/host.gif"
                 hostDialogueText.textContent = IntroDialogue[dialogueIndex];
-                contestantAvatar.src =  "../../assets/images/animated/avatar/" + String(avatarNumber) + "/avatar" +String(avatarNumber) +"game.gif"
+                contestantAvatar.src =  "../../Quizathon/assets/images/animated/avatar/" + String(avatarNumber) + "/avatar" +String(avatarNumber) +"game.gif"
             }
 
         }
@@ -589,14 +589,14 @@ function changeDialogueText(){
              */
             else if(dialogueIndex === 1){
                 hostDialogueText.textContent = GameOverDialogue[dialogueIndex];
-                hostImage.src = "../../assets/images/animated/host/host.gif"
+                hostImage.src = "../../Quizathon/assets/images/animated/host/host.gif"
             }
             /**
              * Set the avatar's image to default after the second message.
              */
             else if(dialogueIndex >= 2){
                 hostDialogueText.textContent = GameOverDialogue[dialogueIndex];
-                contestantAvatar.src =  "../../assets/images/animated/avatar/" + String(avatarNumber) + "/avatar" +String(avatarNumber) +"game.gif"
+                contestantAvatar.src =  "../../Quizathon/assets/images/animated/avatar/" + String(avatarNumber) + "/avatar" +String(avatarNumber) +"game.gif"
             }
             else{
                 hostDialogueText.textContent = GameOverDialogue[dialogueIndex];
@@ -641,7 +641,7 @@ function startGame(){
  */
 function endGame(){
     currentState = "GameOver";
-    questionImg.src = "../../assets/images/still/questionimgdefault.png";
+    questionImg.src = "../../Quizathon/assets/images/still/questionimgdefault.png";
     dialogueIndex = -1;
     for(let i = 0; i < 4;i++){
         answerOptions[i].style.backgroundColor = "darkslateblue";
@@ -662,8 +662,8 @@ function startOutro(){
         gameIntroMusic.load()
         gameIntroMusic.play()
     }
-    contestantAvatar.src =  "../../assets/images/animated/avatar/" + String(avatarNumber) + "/avatar" +String(avatarNumber) +"wave.gif"
-    hostImage.src = "../../assets/images/animated/host/hostIntro.gif"
+    contestantAvatar.src =  "../../Quizathon/assets/images/animated/avatar/" + String(avatarNumber) + "/avatar" +String(avatarNumber) +"wave.gif"
+    hostImage.src = "../../Quizathon/assets/images/animated/host/hostIntro.gif"
     currentState = "Outro"
     if(sessionStorage.getItem("ToggleSFX") === "true" && sessionStorage.getItem("ToggleSFX") !== null){
         applauseSFX.play();
@@ -740,8 +740,8 @@ function getRandomInt(max){
  * */
 hostDialogueImg.style.visibility = "hidden";
 hostDialogueText.style.visibility = "hidden";
-questionImg.src = "../../assets/images/still/questionimgdefault.png";
-hostImage.src = "../../assets/images/animated/host/host.gif"
+questionImg.src = "../../Quizathon/assets/images/still/questionimgdefault.png";
+hostImage.src = "../../Quizathon/assets/images/animated/host/host.gif"
 curtainImage.style.animation = 'curtainDefault 1.0s infinite';
 changeElements();
 /**
@@ -752,6 +752,7 @@ setTimeout(startIntro,2000)
 if(sessionStorage.getItem("ToggleMusic") === "true" && sessionStorage.getItem("ToggleMusic")!== null){
     gameIntroMusic.play()
 }
+
 
 
 
